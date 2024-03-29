@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./script.js"></script>
+    <title>Morse Code Translator</title>
+  </head>
+  <body>
+    <main>
+      <h1>Morse Code Translator</h1>
+      <p>
+        Select the translation mode, enter your message and press 'translate'.
+      </p>
+      <form>
+        <div>
+          <input
+            type="radio"
+            name="language_selector"
+            id="english"
+            value="english"
+            class="radio"
+            checked
+          />
+          <label for="english">English to Morse Code</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="language_selector"
+            id="morse"
+            value="morse"
+            class="radio"
+          />
+          <label for="morse">Morse Code to English</label>
+        </div>
+        <label for="input">Input:</label>
+        <textarea
+          cols="50"
+          rows="10"
+          id="input"
+          name="input"
+          placeholder="Type english text, OR morse code with spaces between letters and / between words."
+        ></textarea>
+
+        <input id="button" type="submit" value="Translate!" />
+      </form>
+      <p id="result"></p>
+    </main>
+  </body>
+</html>

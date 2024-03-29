@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  align-items: center;
+  background-color: blanchedalmond;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+div {
+  margin-left: 100px;
+}
+#button {
+  border: 3px solid green;
+  background-color: lightgreen;
+  font-weight: bolder;
+  border-radius: 5px;
+  padding: 10px;
+}
+#input {
+  border: 3px solid orange;
+  background-color: lightsalmon;
+  border-radius: 5px;
+  &::placeholder {
+    color: #3a3b3c;
+  }
+}
+input[type="radio"] {
+  accent-color: #d00de1;
+}
+#result {
+  font-size: xx-large;
+  text-align: center;
+  margin: 20px;
+}
